@@ -282,9 +282,9 @@ public extension SmoothGradientGenerator {
     }
 }
 
-@available(iOS 14.0, OSX 11, tvOS 14, *)
+@available(iOS 14.0, OSX 11, tvOS 14, watchOS 7.0, *)
 extension Color {
-    func toRGB() -> RGBColor {
+  func toRGB() -> RGBColor {
         guard let components = cgColor?.components else { return .init(r: 0, g: 0, b: 0, alpha: 0) }
         return .init(
             r: Double(components[safely: 0] ?? 0),
