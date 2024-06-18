@@ -1,11 +1,11 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.9
 
 import PackageDescription
 
 let package = Package(
     name: "SmoothGradient",
     platforms: [
-      .macOS(.v10_11), .iOS(.v14), .tvOS(.v14), .watchOS(.v7)
+      .macOS(.v10_15), .iOS(.v14), .tvOS(.v14), .watchOS(.v7)
     ],
     products: [
         .library(
