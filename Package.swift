@@ -9,9 +9,6 @@ let package = Package(
   ],
   products: [
     .library(
-      name: "SmoothGradient",
-      targets: ["SmoothGradient"]),
-    .library(
       name: "SmoothGradientDynamic",
       type: .dynamic,
       targets: ["SmoothGradient"]),
@@ -21,7 +18,7 @@ let package = Package(
       name: "SmoothGradient",
       dependencies: [],
       linkerSettings: [
-        .unsafeFlags(["-Wl,-make_mergeable"])
+        
       ]),
     .testTarget(
       name: "SmoothGradientTests",
